@@ -14,7 +14,7 @@
 <div class="center">
 
 <h2>Contact Form</h2>
- <form id="form">
+ <form id="form" action="mailer.php">
     <div class="row">
       <div class="col-25">
         <label for="fname">First Name</label>
