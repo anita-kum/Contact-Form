@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Form</title>
+	
+    <link rel="stylesheet" href="style.css"/>
+	<script src=
+    "https://smtpjs.com/v3/smtp.js">
+  </script>
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="main.js"></script>
+  </head>
+  
+<body>
+
+
+<div class="container">
+<div class="center">
+
+<h2>Contact Form</h2>
+ <form id="form"  action="" method="post"  >
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+      </div>
+    </div>
+	<div class="row">
+      <div class="col-25">
+        <label for="fname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+         <label for="email">Email:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" name="email" id="email" placeholder="email@example.com">
+      </div>
+    </div>
+    <div class="row">
+	 <div class="col-25">
+       <label for="message">Uplaod Image:</label>
+      </div>
+	 <div class="col-75">
+
+		<input type="file"  accept="image/*" name="image" id="myImage"  onchange="loadFile(event)">
+  	
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+       <label for="message">Message:</label>
+      </div>
+      <div class="col-75">
+        <textarea name="message" id="message" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+	
+	<div class="row">
+      <div class="col-25">
+       	<label>Your Image File</label>
+  <img id="output" width="200" />
+      </div>
+     
+</div>
+
+    <div class="row">
+      <button name="submit" id="subnewtopic" onclick="sendEmail()" disabled="disabled">Send</button>
+      <label id="loader"></label>
+      <label id="info"></label>
+    </div>
+  </form>
+  </div>
+</div>
+
+
+		<script>
+		
+
+		var loadFile = function(event) {
+	var image = document.getElementById('output');
+	image.src = URL.createObjectURL(event.target.files[0]);
+};
+
+	(function() {
+   $("input[type='text'], textarea").on("keyup", function(){
+
+        var empty = false;
+        
+        
+        $('input, textarea').each(function() {
+		var test=$(this).val();
+		//alert(test);
+            if ($(this).val() == '') {
+                empty = true;
+            }
+        });
+
+        if (empty) {
+            $('#subnewtopic').attr('disabled', 'disabled');
+        } else {
+            $('#subnewtopic').removeAttr('disabled');
+        }
+    });
+})()
+ function sendEmail() {
+      Email.send({
+        Host: "smtp25.elasticemail.com",
+        Username: "emailtestingpurpose18@gmail.com",
+        Password: "A5DED9E11FDF10279341EFF87E60E0FA297C",
+        To: $("#email").val(),
+        From: "bindu.shama@gmail.com",
+        Subject: "Sending Email using javascript",
+        Body: $("#message").val(),
+      })
+        .then(function (message) {
+          alert("mail sent successfully")
+		  $('#info').html('Message sent!').css('color', 'green').slideDown();
+		    $('#email').val('');
+		  $('#fname').val('');
+          $('#lname').val('');
+          $('#message').val('');
+		  $('#myImage').val('');
+        });
+    }
+	</script>
+	
+</body>
+
+</html>

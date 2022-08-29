@@ -8,30 +8,31 @@ $(document).ready(function() {
 	  myImage = $('#myImage'),
       info = $('#info'),
       loader = $('#loader'),
-      submit = $("#submit");
+      submit = $("#subnewtopic");
   
   form.on('input', '#email, #fname, #lname, #message, #myImage', function() {
     $(this).css('border-color', '');
     info.html('').slideUp();
   });
-  
+ 
+
+
+	
+   
+
+
   submit.on('click', function(e) {
     info.html('Loading...').css('color', 'red').slideDown();
     e.preventDefault();
     if(validate()) {
-      $.ajax({
-        type: "POST",
-        url: "mailer.php",
-        data: form.serialize(),
-        dataType: "json"
-      }).done(function(data) {
+      sendEmail().done(function(data) {
         if(data.success) {
           email.val('');
 		  fname.val('');
           lname.val('');
           message.val('');
 		  myImage.val('');
-          info.html('Message sent!').css('color', 'green').slideDown();
+          //info.html('Message sent!').css('color', 'green').slideDown();
         } else {
           info.html('Could not send mail! Sorry!').css('color', 'red').slideDown();
         }
@@ -67,7 +68,7 @@ $(document).ready(function() {
     return valid;
   }
   function manage(txt) {
-        var bt = document.getElementById('submit');
+        var bt = document.getElementById('subnewtopic');
         var ele = document.getElementsByTagName('input'); 
 
         // Loop through each element.
