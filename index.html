@@ -26,13 +26,13 @@
         <div class="phone details">
           <i class="fas fa-phone-alt"></i>
           <div class="topic">Phone</div>
-          <div class="text-one">+65-80140699</div>
+          <div class="text-one">+65-00000000</div>
           
         </div>
         <div class="email details">
           <i class="fas fa-envelope"></i>
           <div class="topic">Email</div>
-          <div class="text-one">neerusharma.anita@gmail.com</div>
+          <div class="text-one">support@gmail.com</div>
           
         </div>
       </div>
@@ -40,10 +40,10 @@
         <div class="topic-text">Send us a message</div>
         <form id="form"  action="" method="post"  >
         <div class="input-box">
-          <input type="text" id="fname" name="firstname" placeholder="Enter your name">
+          <input type="text" id="fname" name="firstname" placeholder="Enter your first name">
         </div>
 		<div class="input-box">
-          <input type="text" id="lname" name="lastname" placeholder="Enter your name">
+          <input type="text" id="lname" name="lastname" placeholder="Enter your last name">
         </div>
         <div class="input-box">
           <input type="text" name="email" id="email" placeholder="Enter your email">
@@ -78,10 +78,10 @@
 };
 $("#email").on("keyup", function(){
  var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-    var valid=false;
+    var valid=true;
     if(!regex.test($('#email').val())) {
       $('#email').css('border-color', 'red');
-	 return false;
+	 valid=false;
     }
 	
  });
@@ -107,6 +107,7 @@ $("#email").on("keyup", function(){
         }
     });
 })()
+
  function sendEmail() {
       Email.send({
         Host: "smtp25.elasticemail.com",
@@ -170,11 +171,27 @@ $("#email").on("keyup", function(){
     var valid = true;
     var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
     
-    if(!regex.test(email.val())) {
-      email.css('border-color', 'red');
+    if(!regex.test($('#email').val())) {
+      $('#email').css('border-color', 'red');
       valid = false;
     }
-   
+    if($.trim($('#fname').val()) === "") {
+      $('#fname').css('border-color', 'red');
+      valid = false;
+    }
+	if($.trim($('#lname').val()) === "") {
+      $('#lname').css('border-color', 'red');
+      valid = false;
+    }
+    if($.trim($('#message').val()) === "") {
+      $('#message').css('border-color', 'red');
+      valid = false;
+    }
+	if($.trim($('#myImage').val()) === "") {
+      $('#myImage').css('border-color', 'red');
+      valid = false;
+    }
+    
     return valid;
   }
   
