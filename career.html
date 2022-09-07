@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Allied Container Group</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+ <!--  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<style>
+.bg-light {
+    --bs-bg-opacity: 1;
+    background-color: white!important;
+}
+.text-muted {
+    --bs-text-opacity: 1;
+    color: #000000 !important;
+}
+section {
+    padding: 10px 0 !important;
+    overflow: hidden;
+}
+#services
+{
+ padding: 30px 0 !important;
+}
+@media (min-width: 0px) and (max-width: 400px)
+{
+#carrer-allied
+{
+margin-top:10px;
+}
+#sales
+{
+margin-top:5px;
+margin-left:4px;
+}
+#tech
+{
+margin-left:4px;
+}
+
+}
+
+.footer .footer-content .footer-info h3 {
+    font-size: 24px !important;
+	}
+.services .service-item h3 {
+  
+ border-bottom: none !important;
+ padding-left:9px;
+ font-size:18px !important;
+ }
+
+@media (min-width: 1280px)
+{
+.navbar a, .navbar a:focus {
+text-transform:none !important;
+}
+}
+.btn-outline-primary {
+    --bs-btn-color: #EC2330;
+    --bs-btn-border-color: #EC2330;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #EC2330;
+    --bs-btn-hover-border-color: #EC2330;
+    --bs-btn-focus-shadow-rgb: 13,110,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #EC2330;
+    --bs-btn-active-border-color: #EC2330;
+    --bs-btn-active-shadow: inset 0 3px 5pxrgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #EC2330;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #EC2330;
+    --bs-gradient: none;
+}
+
+
+.services .service-item {
+ 
+    background: #F4F4F4 !important;
+  
+}
+.section-bg {
+    background-color: #FFFFFF !important;
+}
+.footer
+{
+  background-color: #FFFFFF !important;
+}
+.btn-primary {
+    --bs-btn-color: #000000;
+    --bs-btn-bg: #FFFFFF;
+    --bs-btn-border-color: #C6C6C6;
+    --bs-btn-hover-color: #EC232F;
+    --bs-btn-hover-bg: #FFFFFF;
+    --bs-btn-hover-border-color: #EC232F;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #EC232F;
+    --bs-btn-active-bg: #FFFFFF;
+    --bs-btn-active-border-color: #EC232F;
+    --bs-btn-active-shadow: inset 0 3px 5pxrgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #000000;
+    --bs-btn-disabled-bg: #FFFFFF;
+    --bs-btn-disabled-border-color: #C6C6C6;
+}
+
+
+#tech
+{
+margin-left:10px;
+}
+#sales
+{
+margin-left:10px;
+}
+.services .service-item {
+    padding: 15px !important;
+   
+}
+
+.navbar a, .navbar a:focus
+{
+color:black !important;
+}
+.navbar a, .navbar a:hover
+{
+color:black !important;
+}
+.header
+{
+position:relative !important;
+padding:21px !important;
+}
+.breadcrumbs
+{
+min-height:65vh !important;
+}
+.header .logo img {
+    max-height: 51px !important;
+ 
+}
+@media (max-width: 1279px)
+{
+.navbar a, .navbar a:hover
+{
+color:white !important;
+}
+.navbar a, .navbar a:focus
+{
+color:white !important;
+}
+.mobile-nav-show
+{
+color:black !important;
+}
+}
+@media (min-width: 1280px)
+{
+.navbar>ul>li>a:before {
+background-color:#EC2330 !important;
+}
+}
+.btn {
+
+    --bs-btn-box-shadow: inset 0 1px 0 #EC2330,0 1px 1px #EC2330 !important;
+       --bs-btn-focus-box-shadow: 0 0 0 1px #EC2330 !important;
+	 border-radius:20px;
+	font-weight:500;
+	font-size:14px;
+	 padding: 10px 22px;
+	 font-family: Roboto !important;
+}
+.col-4 .btn
+{
+	 border-radius:20px;
+	font-weight:400;
+	font-size:14px;
+	 padding: 7px 16px;
+	 font-family: Roboto !important;
+	
+	
+}
+.col-4 .btn-danger
+{
+	 border-radius:20px;
+	font-weight:500;
+	font-size:14px;
+	 padding: 7px 11px;
+	 font-family: Roboto !important;
+	
+	
+}
+
+
+:root {
+    --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-primary: "Roboto" !important;
+    --font-secondary: "Roboto" !important;
+}
+.allied_para
+{
+padding-left:9px;
+}
+.input-group .btn {
+  
+    font-weight: 500;
+    font-size: 14px;
+    padding: 12px 27px;
+    font-family: Roboto !important;
+    background-color: red;
+	color:#FFFFFF;
+}
+.input-group>.form-floating:not(:first-child)>.form-control, .input-group>.form-floating:not(:first-child)>.form-select, .input-group>:not(:first-child):not(.dropdown-menu):not(.form-floating):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+    margin-right: 11px !important;
+     margin-top: 5px !important;
+    margin-bottom: 5px !important;
+	border-radius:10px !important;
+}
+.input-group {
+
+    border: 1px solid #ced4da !important;
+}
+.form-control
+{
+border:none !important;
+}
+.mb-4 {
+    margin-bottom: 0.5rem!important;
+}
+.text-uppercase {
+    text-transform: none !important;
+}
+</style>
+  
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+ <header id="header" class="header d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+       
+   <img src="https://allied.com.sg/images/Logo.jpg" alt=""> 
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+        
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+		   <li><a href="#">Products</a></li>
+           <li><a href="#" class="active">Careers</a></li>
+		   <li><button type="button" class="btn btn-danger" id="button-header">Login</button></li>
+       
+        </ul>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/hero-carousel/Banner_carrer.png');">
+      <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
+
+        <h2 style="font-size:32px; font-weight:500">LOOKING FOR A CAREER WITH US?</h2>
+		<br>
+<a href="#services"><button type="button" class="btn btn-danger" id="button-header" onclick="openPage('services')">View All Jobs</button></a>
+
+      </div>
+    </div><!-- End Breadcrumbs -->
+
+   <!-- ======= Features Section ======= -->
+      <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+		
+         <!--  <h2>Career</h2> -->
+         <div class="input-group">
+  <input type="search" id="myInput"  class="form-control rounded" placeholder="Search for job title" aria-label="Search" aria-describedby="search-addon" />
+  <button type="button" class="btn btn-outline-danger">search</button>
+</div>
+<br>
+<div class= "row">
+             <div class="col-12">
+<button type="button" class="btn btn-primary" onclick="showOne('1')">Operations</button>
+<button type="button" class="btn btn-primary" id="tech" onclick="showOne('2')">Technology</button>
+<button type="button" class="btn btn-primary" data-mdb-ripple-color="light" id="sales" onclick="shownew('3')">Sales & Marketing</button>
+        </div>  </div>  </div>
+
+        <div class="row gy-4" id="carrer-allied">
+
+          <div class="col-lg-4 col-md-6 test hide" data-aos="fade-up" data-aos-delay="100" id='2'>
+		  
+            <div class="service-item  position-relative">
+			<div class= "row">
+             <div class="col-8">
+      <h3 class="job_title">Web Developer</h3>
+    </div>
+    <div class="col-4">
+      <button type="submit" class="btn btn-secondary">Hybrid</button>
+    </div></div>
+             <!--  <h3>Web Developer</h3><button type="submit" class="button-career">Hybrid</button> -->
+			  <p><img src="assets/img/location-icon.png" class="img-fluid" alt="" height="30" width="30"><span> Singapore</span></p>
+              <p class="allied_para">Allied Container (Engineers & Manufacturers) </p>
+			  
+			  			<br>  <p><img src="assets/img/experience_icon.png" class="img-fluid" alt="" height="30" width="30"><span> 3 - 5 years experience</span></p>
+						<br>
+						<div class= "row">
+             <div class="col-8">
+     <span class="allied_para">2 days ago</span>
+    </div>
+    <div class="col-4">
+
+      <button type="submit" class="btn btn-danger">Apply Now</button>
+    </div></div>
+             
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 test hide" data-aos="fade-up" data-aos-delay="100" id='1'>
+            <div class="service-item  position-relative">
+<div class= "row">
+             <div class="col-8">
+      <h3 class="job_title">Forklift Truck Operator</h3>
+    </div>
+    <div class="col-4">
+      <button type="submit" class="btn btn-secondary">Full-Time</button>
+    </div></div>
+            <!--   <h3>Forklift Truck Operator</h3><button type="submit" class="button-career-new">Full-Time</button> -->
+			  <p><img src="assets/img/location-icon.png" class="img-fluid" alt="" height="30" width="30"><span> Singapore</span></p>
+               <p class="allied_para">Winspec Logistics</p>
+			  
+			  			<br>  <p><img src="assets/img/experience_icon.png" class="img-fluid" alt="" height="30" width="30"><span> Forklift / Heavy Vehicle License</span></p>
+						<br>
+                        <div class= "row">  <div class="col-8">
+<span class="allied_para">1 month ago</span>
+    </div>
+    <div class="col-4">
+
+      <button type="submit" class="btn btn-danger">Apply Now</button>
+    </div></div>
+             
+            </div>
+          </div><!-- End Service Item -->
+
+         <div class="col-lg-4 col-md-6 test hide" data-aos="fade-up" data-aos-delay="100" id='1'>
+            <div class="service-item  position-relative">
+			<div class= "row">
+             <div class="col-8">
+      <h3 class="job_title">Container Surveyor</h3>
+    </div>
+    <div class="col-4">
+      <button type="submit" class="btn btn-secondary">Full-Time</button>
+    </div></div>
+    <p><img src="assets/img/location-icon.png" class="img-fluid" alt="" height="30" width="30"><span> Singapore</span></p>
+ <p class="allied_para">Allied Container (Engineers & Manufacturers)</p>
+			  
+			  			<br>  <p><img src="assets/img/experience_icon.png" class="img-fluid" alt="" height="30" width="30"><span> IICL certification</span></p>
+						<br>
+						             <div class= "row"> <div class="col-8">
+     <span class="allied_para">5 days ago</span>
+    </div>
+    <div class="col-4">
+
+      <button type="submit" class="btn btn-danger">Apply Now</button>
+    </div></div>
+             
+            </div>
+          </div><!-- End Service Item -->
+
+    <div class="col-lg-4 col-md-6 test hide" data-aos="fade-up" data-aos-delay="100" id='1'>
+            <div class="service-item  position-relative">
+             <div class= "row">
+             <div class="col-8">
+      <h3 class="job_title">General Worker</h3>
+    </div>
+    <div class="col-4">
+      <button type="submit" class="btn btn-secondary">Full-Time</button>
+    </div></div>
+			 
+			  <p><img src="assets/img/location-icon.png" class="img-fluid" alt="" height="30" width="30"><span> Singapore</span></p>
+              <p class="allied_para">Allied Container (Engineers & Manufacturers) </p>
+			  
+			  			<br>  <p><img src="assets/img/experience_icon.png" class="img-fluid" alt="" height="30" width="30"><span> 3 - 5 years experience</span></p>
+						<br>
+						             <div class= "row"> <div class="col-8">
+     <span class="allied_para">2 days ago</span>
+    </div>
+    <div class="col-4">
+
+      <button type="submit" class="btn btn-danger">Apply Now</button>
+    </div></div>
+             
+            </div>
+          </div><!-- End Service Item -->
+
+  <div class="col-lg-4 col-md-6 test hide" data-aos="fade-up" data-aos-delay="100" id='1'>
+            <div class="service-item  position-relative">
+             <div class= "row">
+             <div class="col-8">
+      <h3 class="job_title">Inventory Assistant</h3>
+    </div>
+    <div class="col-4">
+      <button type="submit" class="btn btn-secondary">Full-Time</button>
+    </div></div>
+            
+			  <p><img src="assets/img/location-icon.png" class="img-fluid" alt="" height="30" width="30"><span> Singapore</span></p>
+               <p class="allied_para">Winspec Logistics</p>
+			  
+			  			<br>  <p><img src="assets/img/experience_icon.png" class="img-fluid" alt="" height="30" width="30"><span> Forklift / Heavy Vehicle License</span></p>
+						<br>
+						             <div class= "row"> <div class="col-8">
+     <span class="allied_para">1 month ago</span>
+    </div>
+    <div class="col-4">
+
+      <button type="submit" class="btn btn-danger">Apply Now</button>
+    </div></div>
+             
+            </div>
+          </div><!-- End Service Item -->
+		    <div class="col-lg-4 col-md-6 test hide" data-aos="fade-up" data-aos-delay="100" id='1'>
+            <div class="service-item  position-relative">
+             <div class= "row">
+             <div class="col-8">
+      <h3 class="job_title">Customer Service</h3>
+    </div>
+    <div class="col-4">
+      <button type="submit" class="btn btn-secondary">Full-Time</button>
+    </div></div>
+              
+			  <p><img src="assets/img/location-icon.png" class="img-fluid" alt="" height="30" width="30"><span> Singapore</span></p>
+              <p class="allied_para">Allied Container Services</p>
+			  
+			  			<br>  <p><img src="assets/img/experience_icon.png" class="img-fluid" alt="" height="30" width="30"><span> IICL certification</span></p>
+						<br>
+						             <div class= "row"> <div class="col-8">
+     <span class="allied_para">5 days ago</span>
+    </div>
+    <div class="col-4">
+
+      <button type="submit" class="btn btn-danger">Apply Now</button>
+    </div></div>
+             
+            </div>
+          </div><!-- End Service Item -->
+		    <div class="col-lg-4 col-md-6 test hide" data-aos="fade-up" data-aos-delay="100" id='1'>
+            <div class="service-item  position-relative">
+             <div class= "row">
+             <div class="col-8">
+      <h3 class="job_title">Tyreman</h3>
+    </div>
+    <div class="col-4">
+      <button type="submit" class="btn btn-secondary">Full-Time</button>
+    </div></div>
+             
+			  <p><img src="assets/img/location-icon.png" class="img-fluid" alt="" height="30" width="30"><span> Singapore</span></p>
+              <p class="allied_para">Allied Container Services</p>
+			  
+			  			<br>  <p><img src="assets/img/experience_icon.png" class="img-fluid" alt="" height="30" width="30"><span> 3 - 5 years experience</span></p>
+						<br>
+						             <div class= "row"> <div class="col-8">
+    <span class="allied_para">2 days ago</span>
+    </div>
+    <div class="col-4">
+
+      <button type="submit" class="btn btn-danger">Apply Now</button>
+    </div></div>
+             
+            </div>
+          </div><!-- End Service Item -->
+		  
+		  
+		      <div class="col-lg-4 col-md-6 test hide" data-aos="fade-up" data-aos-delay="100" id='1'>
+            <div class="service-item  position-relative">
+<div class= "row">
+             <div class="col-8">
+      <h3 class="job_title">M&R Assistant</h3>
+    </div>
+    <div class="col-4">
+      <button type="submit" class="btn btn-secondary">Full-Time</button>
+    </div></div>
+             
+			  <p><img src="assets/img/location-icon.png" class="img-fluid" alt="" height="30" width="30"><span> Singapore</span></p>
+             <p class="allied_para">Winspec Logistics</p>
+			  
+			  			<br>  <p><img src="assets/img/experience_icon.png" class="img-fluid" alt="" height="30" width="30"><span> At Least 1 year Clerical/Data Entry 
+Experience</span></p>
+						<br>
+					             <div class= "row">	 <div class="col-8">
+     <span class="allied_para">36 days ago</span>
+    </div>
+    <div class="col-4">
+
+      <button type="submit" class="btn btn-danger">Apply Now</button>
+    </div></div>
+             
+            </div>
+          </div><!-- End Service Item -->
+		      <div class="col-lg-4 col-md-6 test hide" data-aos="fade-up" data-aos-delay="100" id='1'>
+            <div class="service-item  position-relative">
+             <div class= "row">
+             <div class="col-8">
+      <h3 class="job_title">Inventory Assistant</h3>
+    </div>
+    <div class="col-4">
+      <button type="submit" class="btn btn-secondary">Full-Time</button>
+    </div></div>
+
+			  <p><img src="assets/img/location-icon.png" class="img-fluid" alt="" height="30" width="30"><span> Singapore</span></p>
+               <p class="allied_para">Allied Container (Engineers & Manufacturers)</p>
+			  
+			  			<br>  <p><img src="assets/img/experience_icon.png" class="img-fluid" alt="" height="30" width="30"><span> IICL certification</span></p>
+						<br>
+						             <div class= "row"> <div class="col-8">
+     <span class="allied_para">5 days ago</span>
+    </div>
+    <div class="col-4">
+
+      <button type="submit" class="btn btn-danger">Apply Now</button>
+    </div></div>
+             
+            </div>
+          </div><!-- End Service Item -->
+		      <div class="col-lg-4 col-md-6 test hide" data-aos="fade-up" data-aos-delay="100" id='1'>
+            <div class="service-item  position-relative">
+             <div class= "row">
+             <div class="col-8">
+      <h3 class="job_title">Prime Mover Driver</h3>
+    </div>
+    <div class="col-4">
+      <button type="submit" class="btn btn-secondary">Full-Time</button>
+    </div></div>
+         
+			  <p><img src="assets/img/location-icon.png" class="img-fluid" alt="" height="30" width="30"><span> Singapore</span></p>
+               <p class="allied_para">Allied Container (Engineers & Manufacturers) </p>
+			  
+			  			<br>  <p><img src="assets/img/experience_icon.png" class="img-fluid" alt="" height="30" width="30"><span> Class 4 or 5 Licence with Clean Record</span></p>
+						<br>
+						             <div class= "row"> <div class="col-8">
+     <span class="allied_para">23 days ago</span>
+    </div>
+    <div class="col-4">
+
+      <button type="submit" class="btn btn-danger">Apply Now</button>
+    </div></div>
+             
+            </div>
+          </div><!-- End Service Item -->
+		      <div class="col-lg-4 col-md-6 test hide" data-aos="fade-up" data-aos-delay="100" id='1'>
+            <div class="service-item  position-relative">
+             <div class= "row">
+             <div class="col-8">
+      <h3 class="job_title">Warehouse Assistant</h3>
+    </div>
+    <div class="col-4">
+      <button type="submit" class="btn btn-secondary">Full-Time</button>
+    </div></div>
+
+			  <p><img src="assets/img/location-icon.png" class="img-fluid" alt="" height="30" width="30"><span> Singapore</span></p>
+              <p class="allied_para">Winspec Logistics</p>
+			  
+			  			<br>  <p><img src="assets/img/experience_icon.png" class="img-fluid" alt="" height="30" width="30"><span> Forklift License & Basic Computer Skills</span></p>
+						<br>
+<div class= "row"> <div class="col-8">
+     <span class="allied_para">30 days ago</span>
+    </div>
+    <div class="col-4">
+
+      <button type="submit" class="btn btn-danger">Apply Now</button>
+    </div></div>
+             
+            </div>
+          </div><!-- End Service Item -->
+		      <div class="col-lg-4 col-md-6 test hide" data-aos="fade-up" data-aos-delay="100" id='1'>
+            <div class="service-item  position-relative">
+<div class= "row">
+             <div class="col-8">
+      <h3 class="job_title">Distribution Driver</h3>
+    </div>
+    <div class="col-4">
+      <button type="submit" class="btn btn-secondary">Full-Time</button>
+    </div></div>
+
+			  <p><img src="assets/img/location-icon.png" class="img-fluid" alt="" height="30" width="30"><span> Singapore</span></p>
+              <p class="allied_para">Allied Container (Engineers & Manufacturers)</p>
+			  
+			  			<br>  <p><img src="assets/img/experience_icon.png" class="img-fluid" alt="" height="30" width="30"><span> Class 4 License & Forklift License</span></p>
+						<br>
+					             <div class= "row">	 <div class="col-8">
+    <span class="allied_para">52 days ago</span>
+    </div>
+    <div class="col-4">
+
+      <button type="submit" class="btn btn-danger">Apply Now</button>
+    </div></div>
+             
+            </div>
+          </div><!-- End Service Item -->
+		      <div class="col-lg-4 col-md-6 test hide" data-aos="fade-up" data-aos-delay="100" id='1'>
+            <div class="service-item  position-relative">
+             <div class= "row">
+             <div class="col-8">
+      <h3 class="job_title">Distribution Assistant</h3>
+    </div>
+    <div class="col-4">
+      <button type="submit" class="btn btn-secondary">Full-Time</button>
+    </div></div>
+           
+			  <p><img src="assets/img/location-icon.png" class="img-fluid" alt="" height="30" width="30"><span> Singapore</span></p>
+             <p class="allied_para">Allied Container (Engineers & Manufacturers) </p>
+			  
+			  			<br>  <p><img src="assets/img/experience_icon.png" class="img-fluid" alt="" height="30" width="30"><span> 3 - 5 years experience</span></p>
+						<br>
+						             <div class= "row">
+						 <div class="col-8">
+<span class="allied_para">1 day ago</span>
+    </div>
+    <div class="col-4">
+
+      <button type="submit" class="btn btn-danger">Apply Now</button>
+    </div></div>
+             
+            </div>
+          </div><!-- End Service Item -->
+		    <div class="col-lg-12 col-md-6 test1 hide-ne" data-aos="fade-up" data-aos-delay="100" id='3'>
+            <div class="service-item  position-relative" style="background-color:white !important;">
+              <p style="text-align:center"><span style="color: #EC0D1B;">"No jobs available"</span> for now</p>
+			  
+			  			
+            </div>
+          </div><!-- End Service Item -->
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+  </main><!-- End #main -->
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted" style="background-color:white;">
+ 
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-6 col-xl-6 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4" style="color:#EC0D1B">
+Allied Container Group
+          </h6>
+          
+              <p>
+Singapore’s largest container haulage <br>
+operator and container yard operator.
+               
+              </p>
+			  
+              <div class="social-links d-flex mt-3">
+              <img src="assets/img/instagram_icon.png" class="img-fluid" alt="" height="30" width="30">
+             <img src="assets/img/facebook_logo_icon.png" class="img-fluid" alt="" height="30" width="30">
+              <img src="assets/img/linkedin_icon.png" class="img-fluid" alt="" height="30" width="30">
+              </div>
+			  <br>
+			  <p> Copyright © 2017 - 2022 | Allied Container Group</p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+Regional </h6>
+          <p>
+            <a href="#!" class="text-reset">Malaysia</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Yangon</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Abu Dhabi</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Thailand</a>
+          </p>
+		 
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+           Services
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Container Storage</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Container Repair</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Container Washing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Container Trucking</a>
+          </p>
+		            <p>
+            <a href="#!" class="text-reset">Reefer PTI & Pre-Cooling</a>
+          </p>
+		            <p>
+            <a href="#!" class="text-reset">Warehousing</a>
+          </p>
+        </div>
+		
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+           <h6 class="text-uppercase fw-bold mb-4">
+           Products
+          </h6>
+		            <p>
+            <a href="#!" class="text-reset">Bread Flour</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Cake Flour</a>
+          </p>
+
+          <p>
+            <a href="#!" class="text-reset">Wheat Flour</a>
+          </p>
+         
+        </div>
+		
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+
+</footer>
+<!-- Footer -->
+ 
+ <!--  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a> -->
+
+  <div id="preloader"></div>
+<script>
+
+$('.test1').hide();
+var count=0;
+
+  $("#myInput").keyup(function() {
+
+    // Retrieve the input field text and reset the count to zero
+    var filter = $(this).val(),
+        count = 0;
+      
+       if (count == 0) {
+          $('.test1').hide()
+       }
+        
+    // Loop through the comment list
+    $('#carrer-allied .test').each(function() {
+      // If the list item does not contain the text phrase fade it out
+
+      if ($(this).text().search(new RegExp(filter, "i")) < 0) {
+        $(this).hide(); // MY CHANGE
+		 if (count == 0) {
+          $('.test1').show()
+        } else {
+          $('.test1').hide()
+        }
+       
+        // Show the list item if the phrase matches and increase the count by 1
+      } else {
+        $(this).show(); // MY CHANGE
+		count++;
+       
+
+      }
+
+    });
+});
+function showOne(id) {
+    $('.hide').show().not('#' + id).hide();
+	$('.hide-ne').hide().not('#' + id).hide-ne();
+	
+}
+function shownew(id) {
+$('.hide').hide().not('#' + id).hide();
+	
+   
+	$('.hide-ne').show().not('#' + id).hide-ne();
+}
+</script>
+
+<style>
+.hide-ne
+{
+display :none;
+}
+</style>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
