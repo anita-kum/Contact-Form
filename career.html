@@ -307,7 +307,7 @@ border:none !important;
          <!--  <h2>Career</h2> -->
          <div class="input-group">
   <input type="search" id="myInput"  class="form-control rounded" placeholder="Search for job title" aria-label="Search" aria-describedby="search-addon" />
-  <button type="button" class="btn btn-outline-danger">search</button>
+  <button type="button"  id="btnsearch" class="btn btn-outline-danger">search</button>
 </div>
 <br>
 <div class= "row">
@@ -779,14 +779,46 @@ Regional </h6>
 
   <div id="preloader"></div>
 <script>
-
+$( document ).ready(function() {
+    var result =  getParameterByName('value');
+	if(result==null || result=='')
+  {
+	
+	}
+	else{
+	$('#myInput').val(result);
+	$("#btnsearch").click();
+	}
+});
+function getParameterByName( name ){
+    var regexS = "[\\?&]"+name+"=([^&#]*)", 
+  regex = new RegExp( regexS ),
+  results = regex.exec( window.location.search );
+  if( results == null ){
+    return "";
+  } else{
+    return decodeURIComponent(results[1].replace(/\+/g, " "));
+  }
+}
 $('.test1').hide();
 var count=0;
 
-  $("#myInput").keyup(function() {
-
+  $("#btnsearch").click(function() {
+ // window.location.replace(window.location.href+'?value='+$('#myInput').val());
+  var result =  getParameterByName('value');
+  if(result==null || result=='')
+  {
+  history.pushState(null, 'FeaturePoints Login', window.location.href+'?value='+$('#myInput').val());
+  
+  }
+  else
+  {
+ var test= window.location.href.split('?')[0];
+   history.pushState(null, 'FeaturePoints Login', test+'?value='+$('#myInput').val());
+  }
+ //location.href= window.location.href+'?value='+$('#myInput').val();
     // Retrieve the input field text and reset the count to zero
-    var filter = $(this).val(),
+    var filter = $('#myInput').val(),
         count = 0;
       
        if (count == 0) {
@@ -794,11 +826,12 @@ var count=0;
        }
         
     // Loop through the comment list
-    $('#carrer-allied .test').each(function() {
+    $('#carrer-allied .job_title').each(function() {
       // If the list item does not contain the text phrase fade it out
 
       if ($(this).text().search(new RegExp(filter, "i")) < 0) {
         $(this).hide(); // MY CHANGE
+		$(this).parents('.test').fadeOut();
 		 if (count == 0) {
           $('.test1').show()
         } else {
