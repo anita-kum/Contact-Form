@@ -850,8 +850,36 @@ var count=0;
 });
 function showOne(id) {
     $('.hide').show().not('#' + id).hide();
-	$('.hide-ne').hide().not('#' + id).hide-ne();
+	//$('.hide-ne').hide().not('#' + id).hide-ne();
+	var filter = $('#myInput').val();
+       var count = 0;
+      
+       if (count == 0) {
+          $('.test1').hide()
+       }
+        
+    // Loop through the comment list
+    $('#carrer-allied .job_title').each(function() {
+      // If the list item does not contain the text phrase fade it out
+
+      if ($(this).text().search(new RegExp(filter, "i")) < 0) {
+        $(this).hide(); // MY CHANGE
+		$(this).parents('.test').fadeOut();
+		 if (count == 0) {
+          $('.test1').show()
+        } else {
+          $('.test1').hide()
+        }
+       
+        // Show the list item if the phrase matches and increase the count by 1
+      } else {
+        $(this).show(); // MY CHANGE
+		count++;
+       
 	
+	
+}
+});
 }
 function shownew(id) {
 $('.hide').hide().not('#' + id).hide();
